@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">U-Book</string>
+    <string name="Name">Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+</resources>
