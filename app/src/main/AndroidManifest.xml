@@ -14,6 +14,7 @@
         <activity android:name=".logincs"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Home" />
+        <activity android:name=".categorie" />
         <activity android:name=".firstpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

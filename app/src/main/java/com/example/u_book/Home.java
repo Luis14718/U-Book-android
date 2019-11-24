@@ -35,6 +35,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        controlador();
 
         sign_out = findViewById(R.id.log_out);
         nameTV = findViewById(R.id.name);
@@ -69,6 +70,19 @@ public class Home extends AppCompatActivity {
 
 
     }
+
+    public void controlador() {
+        Button entry = (Button) findViewById(R.id.getbook);
+
+        entry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent bookcall = new Intent(Home.this, categorie.class);
+                startActivity(bookcall);
+            }
+        });
+    }
+
     private void signOut() {
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
