@@ -12,6 +12,13 @@
         tools:layout="@layout/fragment_category">
     </fragment>
 
+    <fragment
+        android:id="@+id/postsScreen"
+        android:name="com.example.u_book.PostsFragement"
+        android:label="@string/fragment_posts"
+        tools:layout="@layout/fragment_posts_fragement">
+    </fragment>
+
 
 
 
