@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -76,6 +77,16 @@ public class CoverFlowAdapter extends BaseAdapter {
                 image.setImageResource(getItem(position).getImageSource());
                 TextView description= (TextView) dialog.findViewById(R.id.description);
                 description.setText(getItem(position).getDescription());
+                TextView availability = (TextView) dialog.findViewById(R.id.availability);
+                Button button = (Button)  dialog.findViewById(R.id.btncaller);
+                if (getItem(position).getAvailability()<=0){
+                    availability.setText("Is available");
+                    button.setVisibility(View.VISIBLE);
+
+                }else {
+                    availability.setText("It is not available");
+                    button.setVisibility(View.INVISIBLE);
+                }
 
                 dialog.show();
             }

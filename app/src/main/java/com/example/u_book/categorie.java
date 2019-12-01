@@ -99,17 +99,17 @@ public class categorie extends AppCompatActivity {
 
 
         games = new ArrayList<>();
-        games.add(new Game(R.drawable.essentialsofnegotiation, "Essentials of Negotiation","77862465"));
-        games.add(new Game(R.drawable.strategicmanagement, "Strategic Management","1260092372"));
-        games.add(new Game(R.drawable.sellingbulidingpartherships, "Selling building Partherships","N/A"));
-        games.add(new Game(R.drawable.theworldofchildren, "The World of Children","205940145"));
-        games.add(new Game(R.drawable.abnormalpsychology, "Abnormal Psychology","1506333354"));
-        games.add(new Game(R.drawable.corporatefinance, "Corporate Finance","N/A"));
-        games.add(new Game(R.drawable.essentialsofcorporatefinance, "Essentials of Corporate Finance","1259277216"));
-        games.add(new Game(R.drawable.publicfinance, "Public Finance","78021685"));
-        games.add(new Game(R.drawable.entrepen, "Personal Finance","1133595839"));
-        games.add(new Game(R.drawable.macroeconomicsessentials, "Macroecnomics Essentials","N/A"));
-        games.add(new Game(R.drawable.macro, "Macroeconomics","262533340"));
+        games.add(new Game(R.drawable.essentialsofnegotiation, "Essentials of Negotiation","77862465",1,"business"));
+        games.add(new Game(R.drawable.strategicmanagement, "Strategic Management","1260092372",0,"business"));
+        games.add(new Game(R.drawable.sellingbulidingpartherships, "Selling building Partherships","N/A",0,"business"));
+        games.add(new Game(R.drawable.theworldofchildren, "The World of Children","205940145",1,"psychology"));
+        games.add(new Game(R.drawable.abnormalpsychology, "Abnormal Psychology","1506333354",0,"psychology"));
+        games.add(new Game(R.drawable.corporatefinance, "Corporate Finance","N/A",0,"finance"));
+        games.add(new Game(R.drawable.essentialsofcorporatefinance, "Essentials of Corporate Finance","1259277216",0,"finance"));
+        games.add(new Game(R.drawable.publicfinance, "Public Finance","78021685",0,"finance"));
+        games.add(new Game(R.drawable.entrepen, "Personal Finance","1133595839",0,"finance"));
+        games.add(new Game(R.drawable.macroeconomicsessentials, "Macroecnomics Essentials","N/A",0,"macroeconomics"));
+        games.add(new Game(R.drawable.macro, "Macroeconomics","262533340",0,"macroeconomics"));
 
 
 
@@ -119,9 +119,9 @@ public class categorie extends AppCompatActivity {
 
 
         games = new ArrayList<>();
-        games.add(new Game(R.drawable.essentialsofnegotiation, "Essentials of Negotiation","77862465"));
-        games.add(new Game(R.drawable.strategicmanagement, "Strategic Management","1260092372"));
-        games.add(new Game(R.drawable.sellingbulidingpartherships, "Selling building Partherships","N/A"));
+        games.add(new Game(R.drawable.essentialsofnegotiation, "Essentials of Negotiation","77862465",0,"none"));
+        games.add(new Game(R.drawable.strategicmanagement, "Strategic Management","1260092372",0,"none"));
+        games.add(new Game(R.drawable.sellingbulidingpartherships, "Selling building Partherships","N/A",0,"none"));
 
 
     }
@@ -129,26 +129,26 @@ public class categorie extends AppCompatActivity {
 
 
         games = new ArrayList<>();
-        games.add(new Game(R.drawable.theworldofchildren, "The World of Children","205940145"));
-        games.add(new Game(R.drawable.abnormalpsychology, "Abnormal Psychology","1506333354"));
+        games.add(new Game(R.drawable.theworldofchildren, "The World of Children","205940145",0,"none"));
+        games.add(new Game(R.drawable.abnormalpsychology, "Abnormal Psychology","1506333354",0,"none"));
 
     }
     private void settingFinance() {
 
 
         games = new ArrayList<>();
-        games.add(new Game(R.drawable.corporatefinance, "Corporate Finance","N/A"));
-        games.add(new Game(R.drawable.essentialsofcorporatefinance, "Essentials of Corporate Finance","1259277216"));
-        games.add(new Game(R.drawable.publicfinance, "Public Finance","78021685"));
-        games.add(new Game(R.drawable.entrepen, "Personal Finance","1133595839"));
+        games.add(new Game(R.drawable.corporatefinance, "Corporate Finance","N/A",0,"none"));
+        games.add(new Game(R.drawable.essentialsofcorporatefinance, "Essentials of Corporate Finance","1259277216",0,"none"));
+        games.add(new Game(R.drawable.publicfinance, "Public Finance","78021685",0,"none"));
+        games.add(new Game(R.drawable.entrepen, "Personal Finance","1133595839",0,"none"));
 
     }
     private void settingMacroeconomics() {
 
 
         games = new ArrayList<>();
-        games.add(new Game(R.drawable.macroeconomicsessentials, "Macroecnomics Essentials","N/A"));
-        games.add(new Game(R.drawable.macro, "Macroeconomics","262533340"));
+        games.add(new Game(R.drawable.macroeconomicsessentials, "Macroecnomics Essentials","N/A",0,"none"));
+        games.add(new Game(R.drawable.macro, "Macroeconomics","262533340",0,"none"));
 
     }
 
