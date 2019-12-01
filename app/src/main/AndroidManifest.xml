@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".logincs" />
+        <activity android:name=".logincs"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Home" />
         <activity android:name=".categorie" />
