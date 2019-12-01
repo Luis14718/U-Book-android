@@ -82,16 +82,44 @@ public class CoverFlowAdapter extends BaseAdapter {
                 if (getItem(position).getAvailability()<=0){
                     availability.setText("Is available");
                     button.setVisibility(View.VISIBLE);
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            dialog.setContentView(R.layout.activity_order);
+                            dialog.setCancelable(true);
+
+                            TextView text = (TextView) dialog.findViewById(R.id.name2);
+                            text.setText(getItem(position).getName());
+                            ImageView image = (ImageView) dialog.findViewById(R.id.image2);
+                            image.setImageResource(getItem(position).getImageSource());
+                            TextView description =(TextView)dialog.findViewById(R.id.description2);
+                            data.set(position,new  Game(getItem(position).getImageSource(),getItem(position).getName(),getItem(position).getDescription(),1,getItem(position).getCategories()));
+
+
+                            dialog.show();
+
+
+
+
+
+
+                        }
+                    });
 
                 }else {
                     availability.setText("It is not available");
                     button.setVisibility(View.INVISIBLE);
                 }
 
+
                 dialog.show();
             }
+
+
         };
     }
+
 
 
     private static class ViewHolder {
