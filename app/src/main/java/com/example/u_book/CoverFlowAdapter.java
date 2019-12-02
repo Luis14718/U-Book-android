@@ -79,6 +79,7 @@ public class CoverFlowAdapter extends BaseAdapter {
                 description.setText(getItem(position).getDescription());
                 TextView availability = (TextView) dialog.findViewById(R.id.availability);
                 Button button = (Button)  dialog.findViewById(R.id.btncaller);
+
                 if (getItem(position).getAvailability()<=0){
                     availability.setText("Is available");
                     button.setVisibility(View.VISIBLE);
@@ -94,8 +95,20 @@ public class CoverFlowAdapter extends BaseAdapter {
                             ImageView image = (ImageView) dialog.findViewById(R.id.image2);
                             image.setImageResource(getItem(position).getImageSource());
                             TextView description =(TextView)dialog.findViewById(R.id.description2);
-                            data.set(position,new  Game(getItem(position).getImageSource(),getItem(position).getName(),getItem(position).getDescription(),1,getItem(position).getCategories()));
+                            description.setText(getItem(position).getDescription());
+                            // data.set(position,new  Game(getItem(position).getImageSource(),getItem(position).getName(),getItem(position).getDescription(),1));
+                            Button button2= (Button) dialog.findViewById(R.id.done);
+                            button2.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    data.set(position,new  Game(getItem(position).getImageSource(),getItem(position).getName(),getItem(position).getDescription(),1,getItem(position).getCategories()));
+                                    dialog.cancel();
 
+
+
+
+                                }
+                            });
 
                             dialog.show();
 
@@ -105,7 +118,11 @@ public class CoverFlowAdapter extends BaseAdapter {
 
 
                         }
+
                     });
+
+
+
 
                 }else {
                     availability.setText("It is not available");
@@ -113,12 +130,21 @@ public class CoverFlowAdapter extends BaseAdapter {
                 }
 
 
+
+
+
+
                 dialog.show();
             }
 
 
+
+
         };
     }
+
+
+
 
 
 
